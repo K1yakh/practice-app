@@ -1,8 +1,8 @@
-import { FlatList, ScrollView, StyleSheet, Text, View, Dimensions, Pressable } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 import { Image } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
+import { Dimensions, FlatList, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Ionicons } from '@expo/vector-icons';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 const HERO_HEIGHT = Math.round(SCREEN_WIDTH * 1.35);
@@ -190,6 +190,7 @@ function Carousel({ title, data }: { title: string; data: MediaItem[] }) {
 
 export default function HomeScreen() {
   const insets = useSafeAreaInsets();
+
 
   return (
     <ScrollView
